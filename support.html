@@ -1,24 +1,56 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Support — Flight Claim Kit</title><style>
-:root{--brand:#7A2A06;--link:#C2410C;--text:#1b1b1f;--muted:#55555f;--bg:#ffffff;--card:#fff4ec}
-@media (prefers-color-scheme:dark){:root{--brand:#FF8A3D;--link:#FF8A3D;--text:#f2f2f5;--muted:#b4b4bf;--bg:#111114;--card:#241a14}}
-*{box-sizing:border-box}body{margin:0;font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);background:var(--bg)}
-main{max-width:720px;margin:0 auto;padding:32px 20px 64px}h1{color:var(--brand);font-size:34px;margin:0 0 4px}h2{color:var(--brand);margin-top:36px}
-p,li{color:var(--text)}.muted{color:var(--muted)}a{color:var(--link)}nav{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:24px}
-section.card{background:var(--card);border-radius:16px;padding:18px 20px;margin:16px 0}footer{margin-top:48px;color:var(--muted);font-size:14px}
-</style></head>
-<body><main><nav><a href="./">Flight Claim Kit</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
-<h1>Support</h1><p class="muted">Flight Claim Kit</p>
-<section class="card"><p>Write to <a href="mailto:lotuslongho@gmail.com">lotuslongho@gmail.com</a>. We answer within 7 days. Please do not send boarding passes or booking references by email unless you want us to see them.</p></section>
-<h2>Questions</h2>
-<p><strong>Can I try it without a flight?</strong> Yes: on the first screen tap <em>Try a sample incident</em>. It uses a fictional airline and is kept in memory only.</p>
-<p><strong>Does it need the internet?</strong> No. It works offline, even in flight mode, and sends nothing anywhere.</p>
-<p><strong>Why "Doors open"?</strong> Under EU and UK rules, arrival delay is measured to the moment the aircraft doors open, not touchdown. Tap it the moment they open.</p>
-<p><strong>Will I get compensation?</strong> The app cannot say that. It shows which rights may apply under which rule, with the article and the rules version. The airline, an authority or a court decides.</p>
-<p><strong>How do I delete everything?</strong> Settings → Your data → Reset the app. There is no copy anywhere else.</p>
-<h2>Other languages</h2>
-<p lang="vi">Hỗ trợ bằng tiếng Việt: viết tới <a href="mailto:lotuslongho@gmail.com">lotuslongho@gmail.com</a>, trả lời trong 7 ngày.</p>
-<p lang="zh-Hans">中文支持：请发邮件至 <a href="mailto:lotuslongho@gmail.com">lotuslongho@gmail.com</a>，7 天内回复。</p>
-<p lang="fr">Assistance en français : écrivez à <a href="mailto:lotuslongho@gmail.com">lotuslongho@gmail.com</a>, réponse sous 7 jours.</p>
-<p lang="pt">Suporte em português: escreva para <a href="mailto:lotuslongho@gmail.com">lotuslongho@gmail.com</a>, resposta em até 7 dias.</p>
-<footer>© 2026 Dương Long Hồ · Flight Claim Kit — app 014 of APP_FACTORY_X · Information, not legal advice.</footer></main></body></html>
+<html lang="vi">
+<!-- Sinh từ 05_PUBLISHING/07_store_package/templates/website/support.html.tpl. Sửa PUBLISHING/_source/ rồi chạy render_package.py.
+     Trang này là Support URL nộp cho Apple: Apple yêu cầu nó dẫn tới thông tin liên hệ thật. -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Hỗ trợ — Flight Claim Kit</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="assets/icon.png">
+</head>
+<body>
+<header class="site">
+  <a class="brand" href="./"><img src="assets/icon.png" alt="" width="36" height="36">Flight Claim Kit</a>
+  <nav>
+    <a href="privacy.html">Quyền riêng tư</a>
+    <a href="terms.html">Điều khoản</a>
+  </nav>
+</header>
+<main>
+  <h1>Hỗ trợ</h1>
+  <p class="updated">Cập nhật lần cuối: 29/09/2026</p>
+
+  <div class="summary">
+    <p><strong>Liên hệ:</strong> <a href="mailto:lotuslongho@gmail.com">lotuslongho@gmail.com</a></p>
+    <p>Flight Claim Kit do một người làm. Mình đọc mọi thư và thường trả lời trong vòng 7 ngày.
+      Khi báo lỗi, hãy ghi đời iPhone, phiên bản iOS và các bước để thấy lỗi. Đừng gửi kèm dữ liệu sổ của bạn
+      nếu không cần.</p>
+    <p lang="en"><strong>English:</strong> write to the same address; replies usually come within 7 days.</p>
+  </div>
+
+  <h2>Hỏi đáp</h2>
+  <details>
+    <summary>Can I try it without a flight?</summary>
+    <p>On the first screen tap <strong>Try a sample incident</strong>: a fictional airline, kept in memory only.</p>
+  </details>
+  <details>
+    <summary>Will I get compensation?</summary>
+    <p>The app cannot say that. It shows which rights may apply under which rule, with the article and the rules version. The airline, an authority or a court decides.</p>
+  </details>
+  <details>
+    <summary>Why "Doors open"?</summary>
+    <p>Arrival delay is measured to the moment the aircraft doors open, not touchdown (Court of Justice of the EU, C-452/13).</p>
+  </details>
+  <details>
+    <summary>Does it need the internet?</summary>
+    <p>No. It works offline and sends nothing anywhere.</p>
+  </details>
+</main>
+<footer>
+  <p>Cập nhật lần cuối: 29/09/2026 · © 2026 Dương Long Hồ ·
+    <a href="./">Trang chủ</a> · <a href="privacy.html">Quyền riêng tư</a> · <a href="terms.html">Điều khoản</a></p>
+</footer>
+</body>
+</html>

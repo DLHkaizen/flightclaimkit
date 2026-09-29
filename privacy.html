@@ -1,31 +1,50 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Privacy — Flight Claim Kit</title><style>
-:root{--brand:#7A2A06;--link:#C2410C;--text:#1b1b1f;--muted:#55555f;--bg:#ffffff;--card:#fff4ec}
-@media (prefers-color-scheme:dark){:root{--brand:#FF8A3D;--link:#FF8A3D;--text:#f2f2f5;--muted:#b4b4bf;--bg:#111114;--card:#241a14}}
-*{box-sizing:border-box}body{margin:0;font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);background:var(--bg)}
-main{max-width:720px;margin:0 auto;padding:32px 20px 64px}h1{color:var(--brand);font-size:34px;margin:0 0 4px}h2{color:var(--brand);margin-top:36px}
-p,li{color:var(--text)}.muted{color:var(--muted)}a{color:var(--link)}nav{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:24px}
-section.card{background:var(--card);border-radius:16px;padding:18px 20px;margin:16px 0}footer{margin-top:48px;color:var(--muted);font-size:14px}
-</style></head>
-<body><main><nav><a href="./">Flight Claim Kit</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
-<h1>Privacy policy</h1><p class="muted">Last updated 29 September 2026</p>
-<section class="card"><p><strong>Flight Claim Kit collects no data.</strong> The app has no account, no server, no analytics, no advertising and no tracking, and it contains no networking code.</p></section>
-<h2>What stays on your iPhone</h2>
-<ul>
-<li>The fields read from your boarding pass (name, booking reference, flight, seat). The barcode's raw text is not kept.</li>
-<li>Photos, recordings, screenshots and receipts you record as evidence, with their time stamps and hashes.</li>
-<li>Your claimant details (name, email, postal address), if you enter them, used only to fill in your claim letter.</li>
-</ul>
-<h2>When anything leaves your iPhone</h2>
-<p>Only when you tap Share yourself — a claim pack or an export — and only to the place you choose in the iOS share sheet. The app sends nothing on its own.</p>
-<h2>Permissions</h2>
-<p>The camera is used to scan your boarding pass and photograph evidence; the microphone to record gate announcements. Both are optional: without them you can still import screenshots and type your flight. Notifications are local, scheduled on your iPhone. The app does not use your location and does not ask for your photo library (screenshots are picked one at a time).</p>
-<h2>Deleting</h2>
-<p>Deleting the app, or Settings → Your data → Reset the app, removes everything. There is no copy anywhere else, so it cannot be recovered.</p>
-<h2>Contact</h2><p><a href="mailto:lotuslongho@gmail.com">lotuslongho@gmail.com</a></p>
-<h2>Other languages</h2>
-<p lang="vi"><strong>Tiếng Việt.</strong> Flight Claim Kit không thu thập dữ liệu nào. Thông tin thẻ lên máy bay, ảnh, ghi âm và hoá đơn nằm yên trên máy, chỉ rời máy khi chính bạn bấm Chia sẻ. Xoá app hoặc Xoá toàn bộ là mất hết: không có bản sao ở đâu khác.</p>
-<p lang="zh-Hans"><strong>简体中文。</strong>Flight Claim Kit 不收集任何数据。登机牌信息、照片、录音和收据都留在你的手机上，只有你亲自点“分享”时才会离开。删除应用或“全部清除”会移除一切，其他地方没有副本。</p>
-<p lang="fr"><strong>Français.</strong> Flight Claim Kit ne collecte aucune donnée. Carte d'embarquement, photos, enregistrements et reçus restent sur votre iPhone et ne le quittent que si vous touchez Partager. Supprimer l'app ou tout effacer supprime tout : aucune copie n'existe ailleurs.</p>
-<p lang="pt"><strong>Português.</strong> O Flight Claim Kit não coleta nenhum dado. Cartão de embarque, fotos, gravações e recibos ficam no seu iPhone e só saem quando você toca em Compartilhar. Apagar o app ou apagar tudo remove tudo: não há cópia em outro lugar.</p>
-<footer>© 2026 Dương Long Hồ · Flight Claim Kit — app 014 of APP_FACTORY_X · Information, not legal advice.</footer></main></body></html>
+<html lang="vi">
+<!-- Sinh từ 05_PUBLISHING/07_store_package/templates/website/privacy.html.tpl. Sửa PUBLISHING/_source/ rồi chạy render_package.py.
+     Trang này là Privacy Policy URL nộp cho Apple. Không JavaScript, không tài nguyên ngoài, không theo dõi —
+     một công cụ theo dõi trên chính trang quyền riêng tư của một app "không theo dõi" là tự mâu thuẫn. -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Quyền riêng tư · Privacy Policy — Flight Claim Kit</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="assets/icon.png">
+</head>
+<body>
+<header class="site">
+  <a class="brand" href="./"><img src="assets/icon.png" alt="" width="36" height="36">Flight Claim Kit</a>
+  <nav>
+    <a href="support.html">Hỗ trợ</a>
+    <a href="#en">English</a>
+    <a href="terms.html">Điều khoản</a>
+  </nav>
+</header>
+<main>
+  <section lang="vi">
+  <h2>Quyền riêng tư</h2>
+  <p><strong>Flight Claim Kit không thu thập dữ liệu nào.</strong> Không tài khoản, không máy chủ, không phân tích, không quảng cáo, không theo dõi, không dòng mã mạng nào.</p>
+  <ul>
+    <li>Thông tin thẻ lên máy bay, ảnh, ghi âm, ảnh chụp màn hình, hoá đơn và thông tin người khiếu nại ở yên trên iPhone. Chuỗi mã vạch thô không được lưu.</li>
+    <li>Dữ liệu chỉ rời máy khi chính bạn bấm Chia sẻ, tới nơi bạn chọn.</li>
+    <li>Camera và micro là tuỳ chọn, chỉ dùng khi bạn quét hoặc ghi. Không vị trí, không truy cập Thư viện ảnh.</li>
+    <li>Xoá app, hoặc Xoá toàn bộ, là mất hết. Không có bản sao ở đâu khác.</li>
+  </ul>
+  </section>
+
+  <section lang="en" id="en">
+  <h2>Privacy</h2>
+  <p><strong>Flight Claim Kit collects no data.</strong> No account, no server, no analytics, no advertising, no tracking, and no networking code.</p>
+  <ul>
+    <li>Boarding pass fields, photos, recordings, screenshots, receipts and your claimant details stay on your iPhone. The barcode's raw text is not kept.</li>
+    <li>Anything leaves your iPhone only when you tap Share, to the place you choose.</li>
+    <li>Camera and microphone are optional and used only when you scan or record. No location, no photo library access.</li>
+    <li>Deleting the app, or Reset the app, removes everything. There is no copy anywhere else.</li>
+  </ul>
+  </section>
+</main>
+<footer>
+  <p>Cập nhật lần cuối / Last updated: 29/09/2026 (2026-09-29) · © 2026 Dương Long Hồ</p>
+</footer>
+</body>
+</html>
